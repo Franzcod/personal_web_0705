@@ -1,10 +1,14 @@
 
 
-// Fondo img
+// Fondo img (aleatorio de la lista)
 var imgList= [  'assets/img/back_1.jpg',
                 'assets/img/back_3.jpg',
-                'assets/img/back_1.jpg',
-                'assets/img/back_3.jpg'  ];
+                'https://images.unsplash.com/photo-1494768788897-7fdaa00de2a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
+                'assets/img/back_4.jpg',
+                'https://images.unsplash.com/photo-1446729444801-31245ddba81a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80', 
+                'https://images.unsplash.com/photo-1473864803180-ca1b3d93c9a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1498&q=80', 
+                'https://images.unsplash.com/photo-1541028114007-e33143a0a955?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80'
+             ];
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -14,7 +18,7 @@ var granimInstance = new Granim({
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     image : {
-        source: imgList[getRandomInt(0, 4)],
+        source: imgList[getRandomInt(0, 7)],
         blendingMode: 'multiply',
         stretchMode: ['stretch','stretch']
     },
