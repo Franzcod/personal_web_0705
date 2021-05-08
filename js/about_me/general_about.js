@@ -1,9 +1,12 @@
+// fondo
+
+
 var granimInstance = new Granim({
     element: '#canvas-image-blending',
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     image : {
-        source: 'assets/img/back_3.jpg',
+        source: 'assets/img/back_1.jpg',
         blendingMode: 'multiply',
         stretchMode: ['stretch','stretch']
     },
@@ -23,6 +26,8 @@ var granimInstance = new Granim({
 });
 
 
+
+// icono de menu desplegable
 
 const iconElement = document.getElementById('icon');
 sonido = document.getElementById("audio");
@@ -57,6 +62,7 @@ iconElement.addEventListener('click', function(){
     
 } );
 
+// funciones
 
 function mobile(){
     document.getElementById("idMobile").classList.toggle("mobile");

@@ -4,10 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practico 2021</title>
+    <!-- Mi estilo -->
+    <link rel="stylesheet" href="/style/init/style.css">
+    <link rel="stylesheet" href="/style/about_me/about_style.css">
+    
+    <link rel="stylesheet" href="/style/init/text_anim.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- libreria JS y estylo del icono (animacion) -->
+    <link rel="stylesheet" href="/js/iconate/iconate.min.css">
+    <script type="text/javascript" src="/js/iconate/iconate.min.js"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- script que muestra frame con mi CV en PDF -->
+    <script>
+        function abrir() {
+          open(src="micv.pdf","",'top=50,left=1000,width=700,height=700') ;
+        }
+    </script>
+    
+    
 </head>
-<body>
-    <h1>about me</h1>
+<body id="canvas">
+    <!-- fondo con efecto de colores -->
+    <canvas id="canvas-image-blending"></canvas>
+    <!-- nav bar -->
+    <nav>
+        <!-- <audio id="audio" src="/assets/sound/pacman-eating-cherry.mp3"></audio> -->
+        <audio id="audio2" src="/assets/sound/mario-bros-wonderful.mp3"></audio>
+        <div class="toggle">
+            <i id="icon" class="fa fa-bars fa-lg" onclick="mobile()"></i>
+        </div>
+        <ul id="idMobile">
+            <li><a href="/index.html">INIT</a></li>
+            <li><a href="/about_me.html">About me</a></li>
+            <li onclick="playSound()"><a href="#" >Contact me</a></li>
+            <li><a href="javascript:abrir()">Download CV</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <div id="div_photo">
+        <img id="photo" src="/assets/img/yo_2.jpg" alt="">
+    </div>
+    
+    
+
+    <div id="circulo_color">
+        <span>
+            <!-- <img src="/assets/img/yo_2.jpg" alt=""> -->
+        </span>
+    </div>
+
+
+
+     
+
+    
+    
+    
+    
+
+
+
+    <script type="text/javascript" src="js/init/granim.min.js"></script>
+    <script type="text/javascript" src="js/about_me/general_about.js"></script>
+    <script type="text/javascript" src="js/init/text_anim.js"></script>
+
+    
+    
     
 </body>
 </html>

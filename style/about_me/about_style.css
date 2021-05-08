@@ -1,0 +1,48 @@
+#about_me{
+    font-size: 5vw;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+
+#div_photo{
+    width: max-content;
+    height: max-content;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+
+#photo{
+    border-radius: 50%;
+    position: absolute;
+    width: 150px;
+    bottom:  10vh;
+    padding-left: 5vw;
+    
+}
+
+#circulo_color {
+    transition: opacity .15s ease-in-out,height 0s ease-in-out 0s;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    bottom:  10vh;
+    width: 150px;
+    height: 150px;
+    background-color: #c2140a;
+    background-image: linear-gradient(to right,#ff6148,#f73c64);
+    mix-blend-mode: multiply;
+    padding-left: 5vw;
+}
+
+
+@media (min-width: 768px) {
+    #about_me{
+        padding-top: 10vh;
+        padding-left: 5vw;
+    }
+ }
