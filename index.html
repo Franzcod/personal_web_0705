@@ -15,12 +15,14 @@
     <script type="text/javascript" src="/js/init/iconate/iconate.min.js"></script>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- script que muestra frame con mi CV en PDF -->
     <script>
         function abrir() {
-          open(src="micv.pdf","",'top=50,left=1000,width=700,height=700') ;
+          open(src="assets/micv.pdf","",'top=50,left=1000,width=700,height=700') ;
         }
     </script>
     
@@ -30,14 +32,16 @@
     <!-- fondo con efecto de colores -->
     <canvas id="canvas-image-blending"></canvas>
     <!-- nav bar -->
-    <nav>
+    <nav >
         <!-- <audio id="audio" src="/assets/sound/pacman-eating-cherry.mp3"></audio> -->
         <audio id="audio2" src="/assets/sound/mario-bros-wonderful.mp3"></audio>
+        <p id="fp">F.P</p>
         <div class="toggle">
             <i id="icon" class="fa fa-bars fa-lg" onclick="mobile()"></i>
         </div>
-        <ul id="idMobile">
-            <li><a href="#">INIT</a></li>
+        <ul id="idMobile" >
+            <li><a href="#">INIT</a><hr></li>
+            
             <li><a href="/about_me.html">About me</a></li>
             <li onclick="playSound()"><a href="#" >Contact me</a></li>
             <li><a href="javascript:abrir()">Download CV</a></li>

@@ -1,5 +1,10 @@
+/* * {
+    padding: 0;
+    margin: 0;
+  } */
+
 #canvas-image-blending{
-    position: absolute;
+    position: fixed;
     display: block;
     width: 100%;
     height: 100%;
@@ -8,6 +13,7 @@
     bottom: 0;
     left: 0;
     z-index: -10;
+    
 }
 
 
@@ -18,22 +24,41 @@ i ,h2{
 
 /* /* ESTILOS NORMALES (para móviles en vertical)
    ========================================================================= / */
+
+
+
 nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+}
+
+nav #fp {
+    font-size: 7vh;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin: 0;
+
 }
 .toggle{
     display: block;
     width:100%;
-    padding: 10px ;
+    padding: 20px ;
     text-align: right;
     box-sizing: border-box;
-    color: #fff;
-    font-size: 30px;
+    color: rgb(165, 16, 16);
+    font-size: 5vh;
     
 }
 ul{
-    background-color: rgba(90, 88, 90, 0.034);
-    width: 90%;
+    background-color: rgba(226, 28, 226, 0.034);
+    width: 50vw;
+    right: 0vw;
+    margin-top: 8vh;
+    padding-right: 20px;
     display: none;
     position: fixed;
 }
@@ -44,16 +69,27 @@ ul li{
     padding-top: 20px;
     text-align: right;
 }
-
-ul li:hover{
-    background: #111111a2;
+hr{
+    width: 2vw;
+    margin: 0;
 }
+
+/* ul li:hover{
+
+     background: #111111a2; 
+} */
 
 ul li a{
     color: #fff;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    font-size: 3vh;
+}
+
+ul li a:hover{
+    font-size: +6;
+    color: tomato;
 }
 
 .mobile{
@@ -96,9 +132,9 @@ ul li a{
  
 
 @media (max-width: 425px) { 
-    ul li{
+    /* ul li{
        padding-right: 10vw; 
-    }
+    } */
     
     #hi {
         font-size: 35vw;
@@ -113,7 +149,7 @@ ul li a{
 @media (max-width: 768px){
     .nombre {
         padding-left: 5vw;
-        padding-top: 30vh;
+        padding-top: 20vh;
     }
     #hi {
         font-size: 20vw;
@@ -134,21 +170,25 @@ ul li a{
     }
 
     ul{
-        margin-left: 30vw;
-        padding: 0;
-        width: 60vw;
+        margin-left: auto;
+        margin-right: 10vw;
+        width: max-content;
         display: block;
+        position: fixed;
     }
     ul li{
         list-style: none;
         display: inline-block;
-        padding: 20px;
+        padding: 1vw;
         text-align: center;
+    }
+    ul li a{
+        font-size: 2.5vw;
     }
 
     .nombre {
         padding-left: 5vw;
-        padding-top: 30vh;
+        padding-top: 15vh;
     }
     #hi {
         font-size: 18vw;
@@ -182,6 +222,11 @@ ul li a{
 /* / Tablets en horizonal y escritorios normales
    ------------------------------------------------------------------------- / */
 @media (min-width: 1024px) {
+
+    .nombre {
+        padding-left: 10vw;
+        padding-top: 15vh;
+    }
     ul li a{
         font-size: 1.5vw;
     }
@@ -201,16 +246,16 @@ ul li a{
 /* / Escritorios muy anchos
    ------------------------------------------------------------------------- */ 
 @media (min-width: 1200px) { 
-.nombre {
-    padding-left: 10vw;
-    padding-top: 18vh;
-}
-#hi {
-    font-size: 15vw;
-}
+    .nombre {
+        padding-left: 10vw;
+        padding-top: 20vh;
+    }
+    #hi {
+        font-size: 10vw;
+    }
 
 
-#iam {
-    font-size: 8vw;
-}
+    #iam {
+        font-size: 8vw;
+    }
 }
