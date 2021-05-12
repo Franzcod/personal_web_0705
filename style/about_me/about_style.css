@@ -20,14 +20,16 @@ ul{
 hr{
     margin: 0;
 } */
-
+hr{
+   color: azure;
+}
 #conteiner_principal{
 
     width: 90%;
-    
-    margin: 20vh  auto;
-    height: 200px;
-    background-color: rgba(241, 182, 182, 0.753);
+    padding: 3vh;
+    margin: 25vh  auto;
+    height: fit-content;
+    background-color: rgba(61, 58, 58, 0.753);
     z-index: -20;
     
 }
@@ -41,8 +43,8 @@ hr{
     /* position: relative; */
     left: 5vw;
     bottom:  0vh;
-    width: 25vw;
-    height: 25vw;
+    width: 10vw;
+    height: 10vw;
     background-color: #c2140a;
     background-image: linear-gradient(to right,#fc6952,#fc1f4f);
     z-index: 1;
@@ -50,15 +52,263 @@ hr{
 }
 
 
-#photo{
+#circulo_color #photo{
     border-radius: 50%;
     /* position: absolute; */
-    width: 25vw;
+    width: 10vw;
     mix-blend-mode: multiply;
     
 }
 
+.skill_img img{
+    z-index: -2;
+    position: fixed;
+    width: 30%;
+}
 
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+/* JUEGOOOOO */
+:root {
+   --pixel-size: 1px;
+   --grid-cell: calc( var(--pixel-size) * 16);
+   --bg: #9fa7e4;
+}
+@media( min-width: 700px ) {
+   :root {
+      --pixel-size: 1px;
+   }
+}
+@media( min-width: 1000px ) {
+   :root {
+      --pixel-size: 2px;
+   }
+}
+ /* @media( min-width: 1000px ) {
+    :root {
+       --pixel-size: 5px;
+    }
+ } */
+
+#inFrame{
+   position: relative;
+   margin: auto auto;
+   /* background: var(--bg); */
+   width: fit-content;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+ .pixel-art {
+    image-rendering: pixelated;
+ }
+ 
+ .frame {
+    
+     padding: 3vh;
+    /* This is just for Pen decoration */
+    width: calc(var(--pixel-size) * 400);
+    height: calc(var(--pixel-size) * 100);
+    outline: var(--pixel-size) solid rgb(58, 57, 57);
+    z-index:1; 
+    position:relative;
+ }
+ 
+ .camera {
+    width: calc(var(--pixel-size) * 400);
+    height: calc(var(--pixel-size) * 100);
+    overflow: hidden;
+    background: #61ddf7;
+    position:relative;
+ }
+ 
+ .map {
+    image-rendering: pixelated;
+    background-image: url('/assets/mapa13x6.png');
+    
+    /* background-image: url('/PRUEBA1.png') ; */
+    /* background-image: url("https://assets.codepen.io/21542/CameraDemoMap.png"); */
+    background-size: 100%;
+    width: calc(20 * var(--grid-cell));
+    height: calc(10 * var(--grid-cell));
+    position: relative;
+ }
+ 
+ .character {
+    width: calc( var(--grid-cell)* 2 );
+    height: calc( var(--grid-cell)* 2 );
+    position: absolute;
+    overflow:hidden;
+ }
+ 
+ .shadow {
+    width: calc( var(--grid-cell)* 2 );
+    height: calc( var(--grid-cell)* 2 );
+    position: absolute;
+    left:0;
+    top:0;
+    background: url("https://assets.codepen.io/21542/DemoRpgCharacterShadow.png") no-repeat no-repeat;
+    background-size: 100%;
+ }
+ 
+ .character_spritesheet {
+    position: absolute;
+    background: url('/assets/ASETI4.png')no-repeat no-repeat;
+    /* background: url("https://assets.codepen.io/21542/DemoRpgCharacter.png") no-repeat no-repeat; */
+    background-size: 100%;
+    width: calc( var(--grid-cell)* 8 );
+    height: calc( var(--grid-cell)* 8 );
+ }
+
+ .character_spritesheet2 {
+   position: absolute;
+   background: url('/aseti.png')no-repeat no-repeat;
+   /* background: url("https://assets.codepen.io/21542/DemoRpgCharacter.png") no-repeat no-repeat; */
+   background-size: 100%;
+   width: calc( var(--grid-cell)* 5 );
+   height: calc( var(--grid-cell)* 5 );
+}
+ 
+ /* .character[facing="right"] .character_spritesheet {
+    background-position-y: calc( var(--pixel-size) * -32 );
+ }
+ .character[facing="up"] .character_spritesheet {
+    background-position-y: calc( var(--pixel-size) * -64 );
+ }
+ .character[facing="left"] .character_spritesheet {
+    background-position-y: calc( var(--pixel-size) * -96 );
+ }
+ .character[walking="true"] .character_spritesheet {
+    animation: walkAnimation 0.6s steps(4) infinite; 
+ } */
+
+ /* PARA SPRITES DE ASETI2 */
+ .character[facing="right"] .character_spritesheet {
+   background-position-y: calc( var(--pixel-size) * -64 );
+}
+.character[facing="up"] .character_spritesheet {
+   background-position-y: calc( var(--pixel-size) * -96 );
+}
+.character[facing="left"] .character_spritesheet {
+   background-position-y: calc( var(--pixel-size) * -32 );
+}
+.character[walking="true"] .character_spritesheet {
+   animation: walkAnimation 0.6s steps(4) infinite; 
+}
+
+
+
+/* PARA SPRITES DE ASH */
+/* .character[facing="right"] .character_spritesheet {
+   background-position-y: calc( var(--pixel-size) * -69 );
+}
+.character[facing="up"] .character_spritesheet {
+   background-position-y: calc( var(--pixel-size) * -105 );
+}
+.character[facing="left"] .character_spritesheet {
+   background-position-y: calc( var(--pixel-size) * -35 );
+}
+.character[walking="true"] .character_spritesheet {
+   animation: walkAnimation 0.6s steps(4) infinite; 
+} */
+ 
+ @keyframes walkAnimation {
+   from {
+     transform: translate3d(0%,0%,0);
+   }
+   to {
+     transform: translate3d(-100%,0%,0);
+   }
+ }
+ 
+ .dpad {
+    position:absolute;
+    right: calc(var(--pixel-size) * 2);
+    bottom: calc(var(--pixel-size) * 2);
+    width: calc(var(--pixel-size) * 37);
+    height: calc(var(--pixel-size) * 38);
+ }
+ .dpad-button {
+    appearance:none;
+    outline:0;
+    border:0;
+    background:transparent;
+    padding:0;
+    cursor:pointer;
+ }
+ .dpad-button svg {
+    display:block;
+    height: calc(var(--pixel-size) * 13);
+ }
+ 
+ .dpad-button.pressed .Arrow_arrow-inset { stroke:#07c2cc; }
+ .dpad-button.pressed .Arrow_arrow-body { stroke:#17dfea; }
+ 
+ .dpad-up {
+    position: absolute;
+    left: calc(var(--pixel-size) * 12);
+    top:calc(var(--pixel-size) * 10);
+ }
+ .dpad-down {
+    position: absolute;
+    bottom: calc(var(--pixel-size) * 3);
+    left: calc(var(--pixel-size) * 12);
+ }
+ .dpad-left {
+    position: absolute;
+    top: calc(var(--pixel-size) * 22);
+    left:0;
+ }
+ .dpad-right {
+    position: absolute;
+    top: calc(var(--pixel-size) * 22);
+    right:0;
+ }
+ 
+ .dpad {
+    user-select:none;
+ }
+ 
+ 
+ .corner_topleft,
+ .corner_topright,
+ .corner_bottomleft,
+ .corner_bottomright {
+    position: absolute;
+    width: var(--pixel-size);
+    height: var(--pixel-size);
+    background: var(--bg);
+    z-index:2;
+ }
+ 
+ .corner_topleft {
+    top: calc(var(--pixel-size) * -1);
+    left: calc(var(--pixel-size) * -1);
+ }
+ .corner_topright {
+    top: calc(var(--pixel-size) * -1);
+    right: calc(var(--pixel-size) * -1);
+ }
+ .corner_bottomleft {
+    bottom: calc(var(--pixel-size) * -1);
+    left: calc(var(--pixel-size) * -1);
+ }
+ .corner_bottomright {
+    bottom: calc(var(--pixel-size) * -1);
+    right: calc(var(--pixel-size) * -1);
+ }
+ 
+ .headline {
+    position:absolute;
+    top:calc(var(--pixel-size) * 2);
+    right:calc(var(--pixel-size) * 2);
+    width: calc(var(--pixel-size) * 75)
+ }
 
 
 

@@ -54,7 +54,7 @@ nav #fp {
     
 }
 ul{
-    background-color: rgba(226, 28, 226, 0.034);
+    /* background-color: rgba(3, 3, 3, 0.034); */
     width: 50vw;
     right: 0vw;
     margin-top: 8vh;
@@ -183,20 +183,20 @@ ul li a:hover{
         text-align: center;
     }
     ul li a{
-        font-size: 2.5vw;
+        font-size: 1.3vw;
     }
 
     .nombre {
         padding-left: 5vw;
-        padding-top: 15vh;
+        padding-top: 25vh;
     }
     #hi {
-        font-size: 18vw;
+        font-size: 9vw;
     }
     
     
     #iam {
-        font-size: 11vw;
+        font-size: 8vw;
     }
 
     .icons_contact{
@@ -212,6 +212,9 @@ ul li a:hover{
     .icons_contact a {
         padding: 3vh 0;
         font-size: 5vh;
+    }
+    .icons_contact a  :hover{
+        text-shadow: 5px 5px 10px rgb(255, 253, 253), 0 0 1em rgb(12, 11, 11), 0 0 5em rgb(248, 5, 5);
     }
 
 
@@ -232,12 +235,12 @@ ul li a:hover{
     }
     
     #hi {
-        font-size: 15vw;
+        font-size: 5vw;
     }
     
     
     #iam {
-        font-size: 8vw;
+        font-size: 5vw;
     }
  }
 
