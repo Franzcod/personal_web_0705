@@ -9,7 +9,7 @@ nav{
 ul{
     background-color: transparent;
     
-    z-index: 500;
+    z-index: 50;
     
 }
 
@@ -30,7 +30,7 @@ hr{
     margin: 25vh  auto;
     height: fit-content;
     background-color: rgba(61, 58, 58, 0.753);
-    z-index: -20;
+    z-index: -0;
     
 }
 
@@ -101,6 +101,7 @@ hr{
    display: flex;
    align-items: center;
    justify-content: center;
+   z-index: 1;
 }
 
 
@@ -227,6 +228,7 @@ hr{
  }
  
  .dpad {
+    background-color: bisque;
     position:absolute;
     right: calc(var(--pixel-size) * 2);
     bottom: calc(var(--pixel-size) * 2);
@@ -269,6 +271,12 @@ hr{
     top: calc(var(--pixel-size) * 22);
     right:0;
  }
+
+ .power-dpad{
+   position: absolute;
+   top: calc(var(--pixel-size) * 12);
+   
+ }
  
  .dpad {
     user-select:none;
@@ -310,8 +318,59 @@ hr{
     width: calc(var(--pixel-size) * 75)
  }
 
+ @media (max-width: 768px){
 
+   ul{
+      z-index: 500;
+   }
 
+   :root {
+      --pixel-size: 2px;
+   }
+
+   #conteiner_principal{
+      padding: 5px;
+   }
+
+   .frame {
+      padding: 5px;
+     /* This is just for Pen decoration */
+     width: calc(var(--pixel-size) * 170);
+     height: calc(var(--pixel-size) * 220);
+   }
+   
+   .camera {
+     width: calc(var(--pixel-size) * 170);
+     height: calc(var(--pixel-size) * 220);
+   }
+
+   .dpad-button svg {
+      display:block;
+      height: calc(var(--pixel-size) * 16);
+   }
+
+   .dpad-up {
+      position: absolute;
+      left: calc(var(--pixel-size) * 5);
+      top:calc(var(--pixel-size) * -10);
+   }
+   .dpad-down {
+      position: absolute;
+      bottom: calc(var(--pixel-size) * 0);
+      left: calc(var(--pixel-size) * 5);
+   }
+   .dpad-left {
+      position: absolute;
+      top: calc(var(--pixel-size) * 6);
+      left: calc(var(--pixel-size) * -10);
+   }
+   .dpad-right {
+      position: absolute;
+      top: calc(var(--pixel-size) * 6);
+      right:calc(var(--pixel-size) * 1);
+   }
+   
+ }
 
 
 

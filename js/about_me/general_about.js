@@ -152,8 +152,8 @@ const placeCharacter = () => {
    if (y > bottomLimit) { y = bottomLimit; }
    
    
-   var camera_left = pixelSize * 166;
-   var camera_top = pixelSize * 42;
+   var camera_left = pixelSize * 75;
+   var camera_top = pixelSize * 100;
    
    map.style.transform = `translate3d( ${-x*pixelSize+camera_left}px, ${-y*pixelSize+camera_top}px, 0 )`;
    character.style.transform = `translate3d( ${x*pixelSize}px, ${y*pixelSize}px, 0 )`;  
